@@ -9,7 +9,8 @@
 
 
 Start a GPU-enabled instance. do pip install vllm. If it doesn't work. Download from source. Consult vllm.ai  
-Use !python -m vllm.entrypoints.api_server --model FarziBuilder/llama-2-7b-custom --host 127.0.0.1 --port 8080 for starting the server and then run inference.py
+Use !python -m vllm.entrypoints.api_server --model FarziBuilder/LLama-remark-try2 --host 127.0.0.1 --port 8080 for starting the server and then run inference.py
+Change the model attribute to run the right one. Consult my HF profile (FarziBuilder)
 
 Note:-
 
