@@ -17,7 +17,8 @@ Note:-
 The first token generation time is affected by the max number of tokens generated. Generating all at once may take >2.5 sec, while generating in small steps (20 tokens at a time) may only take ~0.5 sec.
 LLaMa v1 has been fine-tuned over 80 steps on a 790 dataset. The quality can be easily improved.
 You can only specify the max tokens to be generated and hope that the whole statement is delivered within that limit. Sometimes, it ends mid-sentence.
-In addition, this is an API endpoint. It needs to be hosted on AWS EC2 (Sashakt said this wouldn't be an issue).
+In addition, this is an API endpoint. It needs to be hosted on AWS EC2 (Sashakt said this wouldn't be an issue). 
+Need to learn how to host multiple workers  
 
 # What each doc does
 **finalVLLMtrainer:-** This will fine-tune LLaMa v1 models and host on HF  
