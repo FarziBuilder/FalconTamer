@@ -8,9 +8,11 @@
 20th July:- Production-ready fine-tuned LLM deployed using vLLM
 
 
+
 Start a GPU-enabled instance. do pip install vllm. If it doesn't work. Download from source. Consult vllm.ai  
-Use !python -m vllm.entrypoints.api_server --model FarziBuilder/LLama-remark-try2 --host 127.0.0.1 --port 8080 for starting the server and then run inference.py  
-Change the model attribute to run the right one. Consult my HF profile (FarziBuilder)
+Use !python -m vllm.entrypoints.api_server --model FarziBuilder/LLama-remark-try2 --host 127.0.0.1 --port 8080 for starting the server and then run inference.py    
+Change the model attribute to run the right one. Consult my HF profile (FarziBuilder)  
+Don't use the above cmd if instantiating multiple workers, in that case:- update the api_server.py, add the run.py script and run that.
 
 Note:-
 
@@ -25,4 +27,6 @@ Need to learn how to host multiple workers
 **fastInference.py:-** You use this script after the model inference endpoint is set up  
 **settingSagemaker.py:-** This is for deploying on AWS Sagemaker and making an endpoint there. You need the model.tar.gz file for the fine-tuned model for that
 
-**LLaMaTrainer.ipynb/falcon7-try3/falcon-try3-works.ipynb:-** Can ignore, these are the notebooks first used for fine-tuning LLaMa and falcon
+**LLaMaTrainer.ipynb/falcon7-try3/falcon-try3-works.ipynb:-** Can ignore, these are the notebooks first used for fine-tuning LLaMa and falcon  
+**api_server.py:-** Script that needs to be changed in vllm/vllm/entrypoints for instantiating multiple workers  
+**run.py:-** Run this new script for instantiating multiple workers
