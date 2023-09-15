@@ -1,7 +1,7 @@
 # FalconTamers
 28th June:- I know how to fine-tune Open-Source LLMs
 
-8th July:- Deployed fine-tuned falcon 7b on AWS Sagemaker
+8th July:- Deployed fine-tuned falcon 7b on AWS Sagemakers
 
 14th July:- Increased the inference time of LLaMa 7b by 24x using vLLMs and deployed it
 
