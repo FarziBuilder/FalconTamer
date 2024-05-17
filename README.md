@@ -5,7 +5,9 @@
 
 14th July:- Increased the inference time of LLaMa 7b by 24x using vLLMs and deployed it
 
-20th July:- Production-ready fine-tuned LLM deployed using vLLM
+20th July:- Production-ready fine-tuned LLM deployed using vLLM  
+
+17th May'24:- Adjusted the dependencies to make the AI alive again
 
 
 
@@ -29,4 +31,8 @@ Need to learn how to host multiple workers
 
 **LLaMaTrainer.ipynb/falcon7-try3/falcon-try3-works.ipynb:-** Can ignore, these are the notebooks first used for fine-tuning LLaMa and falcon  
 **api_server.py:-** Script that needs to be changed in vllm/vllm/entrypoints for instantiating multiple workers  
-**run.py:-** Run this new script for instantiating multiple workers
+**run.py:-** Run this new script for instantiating multiple workers  
+
+# New learnings  
+- bitsandbytes earlier versions don't support cuda 12.4. So update likewise.
+- Remember to replace libcuda cpu 
